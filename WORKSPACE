@@ -543,3 +543,7 @@ external_files()
 
 load("//third_party:wasm_files.bzl", "wasm_files")
 wasm_files()
+
+android_sdk_repository(name = "androidsdk",build_tools_version = "30.0.3", 
+path = "/Users/stelios/Library/Android/sdk")
+android_ndk_repository(name = "androidndk", api_level=21, path = "/Users/stelios/Library/Android/sdk/ndk/21.4.7075529")
